@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="Contact_Us.css">
+
+<style>
+		*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #494747;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: black;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: black;
+}
+button{
+    background: black;
+    width: 100px;
+    border: none;
+    outline: none;
+    color:white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: opx 5px 15px 0px rgba(20,0,181,0,3);
+}
+.contact-left h3{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr rd:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+section {
+    color: white;
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 85%;
+    margin: auto;    
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+section h2{
+    font-size: 100px;
+    padding-left: 270px;
+}
+section p{
+    font-size: 16px;
+}
+footer{
+    color: rgb(226, 31, 31);
+    padding-left: 450px;
+    padding-top: 150px;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Contact Us</h1>
+		<p>We would like to get your feedback and respond to your queries.
+		<br>Feel free to get in touch with us.</p>
+	<div class="contact-box">
+		<div class="contact-left">
+			<h3>Send your feedback</h3>
+
+            <form action="post-form.php" method="POST">
+
+				<div class="input-row">
+					<div class="input-group">
+						<label>Name</label>
+						<input type="text" placeholder="Name" id="name" name="name" required>
+					</div>
+					<div class="input-group"> 
+						<label>Phone</label>
+						<input type="text" placeholder="+__" id="phone" name="phone">
+					</div>
+
+				</div>
+				<div class="input-row">
+					<div class="input-group">
+						<label>Email</label>
+						<input type="email" placeholder="__@gmail.com." id="email" name="email" required>
+					</div>
+					<div class="input-group"> 
+						<label>Location</label>
+						<input type="text" placeholder="__" id="location" name="location">
+					</div>
+					
+				</div>
+				<label>Message</label>
+				<textarea rows="5" placeholder="Your Message" id="message"></textarea>
+				<label><input type="checkbox" name="terms">I agree to the terms and conditions.</label>
+				<button type="submit">SEND</button>
+			</form>
+	</div>
+	<div class="contact-right">
+		<h3>Reach us</h3>
+
+		<table>
+			<tr>
+				<td>Email</td>
+				<td>e-matt@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td>+254710852527</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>Kirinyaga University<br>
+					143-10300
+				</td>
+			</tr>
+		</table>
+
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

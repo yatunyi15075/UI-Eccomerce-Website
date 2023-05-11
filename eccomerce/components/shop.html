@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop</title>
+
+<script>
+        function toggleButtonText (button)
+        {
+            if (button.innerHTML === 'Add to Cart')
+            {
+                button.innerHTML = 'Added';
+            } else
+            {
+                button.innerHTML = 'Add to Cart';
+            }
+        }
+</script>
+    
+<style>
+    header{
+        background-color: rgb(226, 62, 62);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+    }
+    img{
+        display: inline-block;
+        width: 200px;
+        height: auto;
+        margin: 0 10px;
+    }
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    .product-list li{
+        flex-basis: calc(33.33%-20px);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .product-list li h3{
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+
+    }
+    .product-list li p{
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 10px;
+
+    }
+    .product-list li button{
+        background-color: darkred;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .product-list li button:hover{
+        background-color: rgb(226, 62, 62);
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>E-MATT SHOP</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Products</h2>
+            <ul class="product-list">
+                <li>
+                    <img src="../images/cam1.webp">
+                    <h3>Camera</h3>
+                    <p>$100</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="..\images\hd5.webp">
+                    <h3>Black Headphones</h3>
+                    <p>$20</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="..\images\mp6.webp">
+                    <h3>Phone</h3>
+                    <p>$70</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <section>
+                
+                <ul class="product-list">
+                    <li>
+                        <img src="..\images\hd4.webp">
+                        <h3>New Headphone</h3>
+                        <p>$50</p>
+                        <button onclick="toggleButtonText(this)">Add to Cart</button>
+                    </li>
+                    <li>
+                        <img src="..\images\hd3.webp">
+                        <h3>White Headphone</h3>
+                        <p>$80</p>
+                        <button onclick="toggleButtonText(this)">Add to Cart</button>
+                    </li>
+                    <li>
+                        <img src="..\images\mp4.webp">
+                        <h3>Android Phone</h3>
+                        <p>$150</p>
+                        <button onclick="toggleButtonText(this)">Add to Cart</button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <ul class="product-list">
+                <li>
+                    <img src="..\images\hd1.webp">
+                    <h3>Orange Headphone</h3>
+                    <p>$13</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="..\images\hd5.webp">
+                    <h3>Headphone</h3>
+                    <p>$10</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="..\images\mp5.webp">
+                    <h3>Smart Phone</h3>
+                    <p>$700</p>
+                    <button onclick="toggleButtonText(this)">Add to Cart</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+
+

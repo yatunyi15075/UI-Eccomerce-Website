@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog section</title>
+
+<style>
+        * {
+
+    background: WHITE;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 0.5px solid rgb(239, 243, 243);
+}
+
+.blog-heading span {
+    color: rgb(32, 32, 29);
+    font-size: 20px;
+}
+
+.blog-heading h3 {
+    font-size: 30px;
+    color: rgb(226, 62, 62);
+    font-weight: 650px;
+    align-content: center;
+    display: block;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.blog-box {
+    width: 350px;
+    background-color: lightgrey;
+    border: 0.5px solid rgb(238, 241, 241);
+    margin: 20px;
+
+}
+
+.blog-img {
+    width: auto;
+    height: auto;
+}
+
+.blog-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span {
+    color: BLACK;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.blog-text p {
+    color: rgb(57, 55, 209);
+    font-size: 17px;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-transform: ellipsis;
+    margin: 10px 5px;
+
+}
+
+.blog-text a {
+    color: black;
+}
+
+.blog-text a:hover {
+    color: rgb(226, 62, 62);
+    transition: transform;
+}
+
+@media(max-width:800px) {
+    .blog-box {
+        width: 300px;
+
+    }
+}
+
+@media(max-width:1100px) {
+    .blog-box {
+        width: 70%;
+    }
+}
+
+@media(max-width:500px) {
+    .blog-box {
+        margin: 20px 10px;
+        width: 100%;
+
+    }
+
+    #blog {
+        padding: 20px;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <section id="blog">
+        <div class="blog-heading">
+            <h3>E-MATT BLOG</h3>
+        </div>
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="..\images\hd5.webp">
+                </div>
+                <div class="blog-text">
+                    <span>BLACK HEADPHONE</span><br>
+                    <p>We offer very quality and classy headphones at the best prices ever!</p>
+                    <a href="https://www.audeze.com/">Read more</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/cam1.webp">
+                </div>
+                <div class="blog-text">
+                    <span>CAMERA</span><br>
+                    <p>We offer very quality and classy cameras,tablets and earphones at the best prices ever!</p>
+                    <a href="https://www.keh.com/">Read more</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="/images/dv2.webp">
+                </div>
+                <div class="blog-text">
+                    <span>FRIDGE</span><br>
+                    <p>We offer very high quality fridge and  at the best prices ever!</p>
+                    <a href="https://www.lowes.com/">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+    
